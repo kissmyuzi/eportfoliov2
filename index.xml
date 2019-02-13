@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Publication One</title>
+      <link>/publications/about-me/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/about-me/</guid>
+      <description>Interesting stuff</description>
+    </item>
+    
+    <item>
       <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
       <link>/publications/alldaydevops/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
