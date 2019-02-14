@@ -27,7 +27,8 @@ On the first day (4/02/2019) we were assigned to present upon a Cybersecurity to
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/publications/week-2/</guid>
-      <description>ETHICAL HACKING AND BUG BOUNTIES Ethical hacking is a controlled method to find out the weaknesses and vulnerabilities existing in a system or network. In the current technology- centric society, no business is without the use of IT, but such dependency comes at a cost without proper security countermeasures. Mr. Agarwal from TechnoSip Inc summed it up quite well, “Essentially, they&amp;rsquo;re the gatekeepers for the organization, in order to prevent an unethical hacker from inflicting any damage.</description>
+      <description>Problem Statement Previously in the about me section, my personal goals included:
+ Understand tools and techniques from OWASP top 10 to relate to vulnerable web applications. Gain a better understanding of the Cyber Security Sector in general.  However, after the sprint 1, I have began developing a strong interest in bug bounty programs. Thus, the ultimate goal i have set for myself is to achieve a successful medium or high level bug report for a web- application based program on BugCrowd.</description>
     </item>
     
     <item>
