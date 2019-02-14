@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Eddie Webb</title>
+    <title>Publications on Andy Lee</title>
     <link>/publications/</link>
-    <description>Recent content in Publications on Eddie Webb</description>
+    <description>Recent content in Publications on Andy Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Publication One</title>
-      <link>/publications/about-me/</link>
-      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      <title>WEEK 1: SPRINT 1</title>
+      <link>/publications/week-1/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/publications/about-me/</guid>
-      <description>Interesting stuff 123 123 123
-check check check 123</description>
+      <guid>/publications/week-1/</guid>
+      <description>SLO 1, SLO 4 + GROUP REFLECTION A summer studio takes place approximately a month before the usual Autumn university session, utilizing a condensed teaching format of 4 weeks instead of a usual university semester. Out of the many choices to select from, I chose Cybersecurity: An Offensive Mindset as my 6-credit summer course as my personal aim was to find an internship immediately after the holidays.
+On the first day (4/02/2019) we were assigned to present upon a Cybersecurity topic of our own choice in groups of 4 to 5.</description>
     </item>
     
     <item>
-      <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-      <link>/publications/alldaydevops/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>WEEK 2: SPRINT 2</title>
+      <link>/publications/week-2/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/publications/alldaydevops/</guid>
-      <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
- Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
+      <guid>/publications/week-2/</guid>
+      <description>ETHICAL HACKING AND BUG BOUNTIES Ethical hacking is a controlled method to find out the weaknesses and vulnerabilities existing in a system or network. In the current technology- centric society, no business is without the use of IT, but such dependency comes at a cost without proper security countermeasures. Mr. Agarwal from TechnoSip Inc summed it up quite well, “Essentially, they&amp;rsquo;re the gatekeepers for the organization, in order to prevent an unethical hacker from inflicting any damage.</description>
+    </item>
+    
+    <item>
+      <title>SUMMERSTUDIO- CYBER SECURITY: AN OFFENSIVE MINDSET</title>
+      <link>/publications/about-me/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/about-me/</guid>
+      <description>My name is Andy Lee. I’m pursuing a Bachelor of Engineering (Honours) with Diploma in Professional Engineering Practice, majoring in Software and undertaking my 2nd year at UTS. I am quite passionate about cybersecurity and aspire to be a Cyber Security Engineer with focus in incident response (Blue Team). I love problem solving and learning new skillsets, so I dedicated most of my first-year to the UTS Cyber Security Society as an opportunity to learn and gain exposure to the industry.</description>
     </item>
     
   </channel>
