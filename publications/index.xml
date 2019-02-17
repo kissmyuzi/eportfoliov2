@@ -27,8 +27,8 @@ On the first day (4/02/2019) we were assigned to present upon a Cybersecurity to
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/publications/week-2/</guid>
-      <description>Problem Statement Previously in the about me section, my personal goals included:
- Understand tools and techniques from OWASP top 10 to relate to vulnerable web applications. Gain a better understanding of the Cyber Security Sector in general.  However, after the sprint 1, I have began developing a strong interest in bug bounty programs. Thus, the ultimate goal i have set for myself is to achieve a successful medium or high level bug report for a web- application based program on BugCrowd.</description>
+      <description>PROBLEM STATEMENT (SLO 1) In the midst of modern Cyber arms-race, human error still remains as the number one cause of data breaches. Human error accounts for more than half of all successful Cyber Security breaches, with social engineering being the forefront attack vector still relevant today. I have decided to incorporate this problem into the Web Application testing which we are currently undertaking this week.
+ETHINCAL HACKING AND BUG BOUNTIES (SLO 2) Ethical hacking is a controlled method to find out the weaknesses and vulnerabilities existing in a system or network.</description>
     </item>
     
     <item>
