@@ -6,13 +6,23 @@
     <description>Recent content in Publications on Andy Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>WEEK 1: SPRINT 1</title>
+      <title>SUMMER STUDIO: SPRINT 2</title>
+      <link>/publications/week-2/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/week-2/</guid>
+      <description>PROBLEM STATEMENT (SLO 1) In the midst of modern Cyber arms-race, human error still remains as the number one cause of data breaches. Human error accounts for more than half of all successful Cyber Security breaches, with social engineering being the forefront attack vector still relevant today. I have decided to incorporate this problem into the Web Application testing which we are currently undertaking this week.
+ETHINCAL HACKING AND BUG BOUNTIES (SLO 2) Ethical hacking is a controlled method to find out the weaknesses and vulnerabilities existing in a system or network.</description>
+    </item>
+    
+    <item>
+      <title>SUMMER STUDIO: SPRINT 1</title>
       <link>/publications/week-1/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -22,13 +32,13 @@ On the first day (4/02/2019) we were assigned to present upon a Cybersecurity to
     </item>
     
     <item>
-      <title>WEEK 2: SPRINT 2</title>
-      <link>/publications/week-2/</link>
-      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Investment Analysis</title>
+      <link>/publications/investment-analysis/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/publications/week-2/</guid>
-      <description>PROBLEM STATEMENT (SLO 1) In the midst of modern Cyber arms-race, human error still remains as the number one cause of data breaches. Human error accounts for more than half of all successful Cyber Security breaches, with social engineering being the forefront attack vector still relevant today. I have decided to incorporate this problem into the Web Application testing which we are currently undertaking this week.
-ETHINCAL HACKING AND BUG BOUNTIES (SLO 2) Ethical hacking is a controlled method to find out the weaknesses and vulnerabilities existing in a system or network.</description>
+      <guid>/publications/investment-analysis/</guid>
+      <description>My investment towards becoming an engineer. ^ Darvin and Norton model illustration
+Ever since the first day of my High School engineering class, it has been my goal to have engineering as my profession. It was during year 9, at school, when I was tasked to build a Rube Goldberg machine that automated many human processes. Back then, it wasn&amp;rsquo;t an important thing to think about your future career but for me, I found a great appeal to the logical thought process that engineers possessed.</description>
     </item>
     
     <item>
@@ -38,6 +48,37 @@ ETHINCAL HACKING AND BUG BOUNTIES (SLO 2) Ethical hacking is a controlled method
       
       <guid>/publications/about-me/</guid>
       <description>My name is Andy Lee. I’m pursuing a Bachelor of Engineering (Honours) with Diploma in Professional Engineering Practice, majoring in Software and undertaking my 2nd year at UTS. I am quite passionate about cybersecurity and aspire to be a Cyber Security Engineer with focus in incident response (Blue Team). I love problem solving and learning new skillsets, so I dedicated most of my first-year to the UTS Cyber Security Society as an opportunity to learn and gain exposure to the industry.</description>
+    </item>
+    
+    <item>
+      <title>KIWICON 2038AD</title>
+      <link>/publications/kiwicon2038ad/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/kiwicon2038ad/</guid>
+      <description>^ Kiwicon stage during welcome ceremony
+Compact and surrounded by nature, Wellington, New Zealand reminisces creativity with a powerful mix of culture, nature and cuisine. Kiwicon 2038 was held on the 16th to the 17th of November in Wellington, held at the Michael Fowler Centre. At its core, Kiwicon is a hacker conference that deal with the intricacies of breaking into, breaking around technological systems.
+&amp;ldquo;If you&amp;rsquo;re new to hacker conferences, well, we think you&amp;rsquo;re in for a treat.</description>
+    </item>
+    
+    <item>
+      <title>CYSCA 2018</title>
+      <link>/publications/cysca2018/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/cysca2018/</guid>
+      <description>INVESTMENT ANALYSIS My investment towards becoming an engineer. Hello there! As this is my first journal entry i would like to share something special, and has made a profound impact towards my perspective upon Cyber Security.
+The society is called UTS CyberSec, the one and only Cyber Security society in this University. The club was founded around a two years ago (2017) with its core members coming mostly from IT backgrounds.</description>
+    </item>
+    
+    <item>
+      <title>Deauther OLED MINI</title>
+      <link>/publications/deauther-oled-mini/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/deauther-oled-mini/</guid>
+      <description>Paranoid with wireless cameras hidden in the Airbnb? Or the ability to disable your roommate&amp;rsquo;s Netflix stream. The WiFi Deauther OLED MINI is the next leap forward of the Deauther series by DSTIKE, a low-cost WiFi deauthentication project that originates from Spacehuhn.
+Hardware-wise, the MINI boasts only ~80mA of power usage, with an extremely compact board design of only 68mm x 28mm. For the user, a SH1106 1.3&amp;rdquo; OLED display and tactile switch provides basic menu control, while power relies upon a common micro-USB cable.</description>
     </item>
     
   </channel>
