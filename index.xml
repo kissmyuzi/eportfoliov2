@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>SUMMER STUDIO: SPRINT 3</title>
+      <link>/publications/week-3/</link>
+      <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/week-3/</guid>
+      <description>OPTION 1: Own a vulnerable machine of your choice We were given the objective of owning a vulnerable machine from the following list:
+ VulnHub (see resources below) HTB - Retired Cyber Security Challenge Australia - in-a-box TryHackMe (one of the boxes) Any other boot 2 root images you find (please reach out if you are unsure)  I proceeded to undertake an intermediate challenge: &amp;ldquo;Mr. Robot&amp;rdquo; from TryHackMe.com using Kali Linux 64 bit running on my VM workstation.</description>
+    </item>
+    
+    <item>
       <title>SUMMER STUDIO: SPRINT 2</title>
       <link>/publications/week-2/</link>
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>

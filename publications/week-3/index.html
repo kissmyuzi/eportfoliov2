@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SUMMER STUDIO: SPRINT 3</title>
+  <meta property="og:title" content="SUMMER STUDIO: SPRINT 3" />
+  <meta property="og:image" content="/img/download.png" />
+  <meta name="description" content="Hello! I am a Uni student currently studying software engineering. I am interested in malware analysis/ digital forensics and has participated in Cyber Security Challenge Australia 2018 as UTS Team 4(First year).">
+  <meta property="og:description" content="Hello! I am a Uni student currently studying software engineering. I am interested in malware analysis/ digital forensics and has participated in Cyber Security Challenge Australia 2018 as UTS Team 4(First year)." />
+  <meta name="author" content="Andy Lee">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="/css/resume.css" rel="stylesheet">
+  <link href="/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.54.0" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Andy Lee</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/download.png" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="/publications/">Publications</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="/publications/week-3/">SUMMER STUDIO: SPRINT 3</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column content">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">SUMMER STUDIO: SPRINT 3</span></h2>
+    
+    
+    
+
+<h3 id="option-1-own-a-vulnerable-machine-of-your-choice">OPTION 1: Own a vulnerable machine of your choice</h3>
+
+<p>We were given the objective of owning a vulnerable machine from the following list:</p>
+
+<ul>
+<li>VulnHub (see resources below)</li>
+<li>HTB - Retired</li>
+<li>Cyber Security Challenge Australia - in-a-box</li>
+<li>TryHackMe (one of the boxes)</li>
+<li>Any other boot 2 root images you find (please reach out if you are unsure)</li>
+</ul>
+
+<p>I proceeded to undertake an intermediate challenge: &ldquo;Mr. Robot&rdquo; from TryHackMe.com using Kali Linux 64 bit running on my VM workstation. Acccording to the guidelines, there are a total of 3 flags that I have to obtain, with each having a clue and flag submission box.</p>
+
+<p><img src="../../img/option 1 artefact 0.JPG" alt="Artefact 0" /></p>
+
+<p>^ Option 1 Artefact 0: Overview of the virtual machine.</p>
+
+<h4 id="below-is-my-attempt-at-gaining-root-privilege">Below is my attempt at gaining Root privilege:</h4>
+
+<p><strong>1.</strong> First of all, setup the Mr. Robot virtual machine by connecting through the TryHackMe network using openVPN and click on the &ldquo;Deploy&rdquo; button to receive the machine&rsquo;s IP Address.</p>
+
+<p><img src="../../img/option 1 artefact 1.JPG" alt="Artefact 1" /></p>
+
+<p>^Option 1 Artefact 1: Network config. instructions.</p>
+
+<p><strong>2.</strong> Using the given IP address(10.0.0.73), I ran a nmap scan:</p>
+
+<p><strong>nmap -sSV -n -T4 -p1-5000 10.0.0.73</strong></p>
+
+<p><img src="../../img/option 1 artefact 2.JPG" alt="Artefact 2" /></p>
+
+<p>^Option 1 Artefact 2: Initial nmap scan.</p>
+
+<p><strong>3.</strong> I then applied the formatted address into the FireFox browser:</p>
+
+<p><strong><a href="https://10.0.0.73:443">https://10.0.0.73:443</a></strong></p>
+
+<p><img src="../../img/option 1 artefact 3.JPG" alt="Artefact 3" /></p>
+
+<p>^Option 1 Artefact 3: Successful connection with the web page.</p>
+
+<p><strong>4.</strong> From the first hint, &ldquo;Robots&rdquo; I figured that the correct direction was to request the Robot.txt file. By the input of:</p>
+
+<p><strong><a href="https://10.0.0.73/robots.txt">https://10.0.0.73/robots.txt</a></strong> in the browser.</p>
+
+<p><img src="../../img/option 1 artefact 4.JPG" alt="Artefact 4" /></p>
+
+<p>^Option 1 Artefact 4: A dictionary file and the first flag was found!</p>
+
+<p>After inputting the respective requests in the browser,
+<strong><a href="https://10.0.0.73/fsocity">https://10.0.0.73/fsocity</a></strong>
+<strong><a href="https://10.0.0.73/key-1-of-3.txt">https://10.0.0.73/key-1-of-3.txt</a></strong></p>
+
+<p>I received the a download option for a word list and the first flag.</p>
+
+<p><strong>5.</strong> Out of curiosity, I tried to input:
+<strong><a href="https://10.0.0.73/help">https://10.0.0.73/help</a></strong> which resulted in an &ldquo;error page not found&rdquo; from Wordpress.
+Thus, I experimented by trying out <strong><a href="https://10.0.0.73/login">https://10.0.0.73/login</a></strong>, which results in the wordpress login page.</p>
+
+<p><img src="../../img/option 1 artefact 5.JPG" alt="Artefact 4" /></p>
+
+<p>^Option 1 Artefact 4: Exposure of wordpress login page.</p>
+
+    <p class="mt-3">
+    <ul class="tags">
+    
+</ul>
+
+    </p>
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>
