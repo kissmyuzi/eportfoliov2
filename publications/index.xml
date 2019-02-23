@@ -6,10 +6,20 @@
     <description>Recent content in Publications on Andy Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Workplace Learning Readiness</title>
+      <link>/publications/workplace-learning-readiness/</link>
+      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/workplace-learning-readiness/</guid>
+      <description>What I aim to learn from the internship As a current second year student studying engineering, I intend to acquire valuable industry insights from professional engineering teams. I am also looking forward to getting hands-on experience in detection, mitigate and secure infrastructure.
+Another area of focus would be communication, which entails the ability to communicate information correctly, succinctly and without obstruction. The emerging international landscape means a diverse workforce from a multitude of background.</description>
+    </item>
     
     <item>
       <title>SUMMER STUDIO: SPRINT 3</title>
