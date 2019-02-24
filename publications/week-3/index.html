@@ -201,7 +201,7 @@
 
 <p>For example, using Aireplay an attacker can deauthenticate 1 or all wireless clients connected to a particular access point, and then plant a cloned fake access point to easily sniff out all the incoming and outgoing connections.</p>
 
-<p>Presentation Slides: <a href="https://docs.google.com/presentation/d/1mH4f4ga8g755NWiLRoq_wTtxcDtnLqWot66_N0-ESzY/edit?usp=sharing">https://docs.google.com/presentation/d/1mH4f4ga8g755NWiLRoq_wTtxcDtnLqWot66_N0-ESzY/edit?usp=sharing</a></p>
+<p><a href="https://docs.google.com/presentation/d/1mH4f4ga8g755NWiLRoq_wTtxcDtnLqWot66_N0-ESzY/edit?usp=sharing" title="Google Slides">Presentation Slides</a></p>
 
 <p>Further Reading:</p>
 
@@ -299,7 +299,47 @@ Thus, I experimented by trying out <strong><a href="https://10.0.0.73/login">htt
 
 <p>^Option 1 Artefact 8: &ldquo;php-reverse-shell&rdquo; download page.</p>
 
-<p>Following the walkthrough, the only thing that you need to change in the php-script before uploading is the throwback IP and a random port.</p>
+<p><strong>9.</strong> Now for the fun part, login to Elliot&rsquo;s account and and head to Editor in the &ldquo;Appearance tab&rdquo; and replace the &ldquo;404 Template&rdquo; content with the &ldquo;php- reverse-shell&rdquo;.
+However, before updating the file you need to change the throwback IP to your own and add a random port.</p>
+
+<p><img src="../../img/option 1 artefact 9.1.JPG" alt="Artefact 9.1" /></p>
+
+<p>^Option 1 Artefact 9.1: &ldquo;php-reverse-shell&rdquo; in the 404 template page.</p>
+
+<p>Before running the updated 404 page, I ran a listener through Netcat with the same port I specified in the &ldquo;php-reverse-shell&rdquo; script.</p>
+
+<p><img src="../../img/option 1 artefact 9.2.JPG" alt="Artefact 9.2" /></p>
+
+<p>^Option 1 Artefact 9.2: Successful reverse shell using Netcat.
+<br>
+<br></p>
+
+<p>*<strong>Warning: The following pics containing Mr. Robot machine&rsquo;s IP address may be different from previous pics due to machine timeout, but will possess similar layout: 10.0.0.XXX</strong>
+<br>
+<br>
+<br></p>
+
+<p><strong>10.</strong> With the only hints left being &ldquo;White coloured font&rdquo; and &ldquo;nmap&rdquo;, I proceeded to research privilege escalation methods involving fonts and nmap. Luckily I came across Penetration Testing Lab&rsquo;s article on <a href="https://pentestlab.blog/category/privilege-escalation/" title="Privilege-Escalation">SUID Executables</a>, which detailed the use of existing binaries and utilities to escalate privliges to root if they have SUID permission. Nmap, Vim, find and Bash are some of teh tools that could be exploited, but I believe the correct lies in nmap.</p>
+
+<p><img src="../../img/option 1 artefact 10.1.JPG" alt="Artefact 10.1" /></p>
+
+<p>^Option 1 Artefact 10.1: privilege Escalation instructions from Pentestlab.blog.</p>
+
+<p>After running the above commands, it would be clear as to which executable to exploit. Similar to the hint &ldquo;nmap&rdquo;, it was clear that the machine ran an older version of Nmap(2.02 to 5.21) which could be exploited to run a shell with root privileges. However, as I followed the article the machine responded with not being able to find nmap, I am currently stuck on this step. For now, I will continue my research and will update this article as soon as I find a solution to this problem.</p>
+
+<p><img src="../../img/option 1 artefact 10.2.JPG" alt="Artefact 10.2" /></p>
+
+<p>^Option 1 Artefact 10.2: nmap not found.</p>
+
+<h3 id="references">REFERENCES</h3>
+
+<p>Penetration Testing Lab. 2019. Privilege Escalation | Penetration Testing Lab. [ONLINE] Available at: <a href="https://pentestlab.blog/category/privilege-escalation/">https://pentestlab.blog/category/privilege-escalation/</a>. [Accessed 22 February 2019].</p>
+
+<p>aireplay-ng [Aircrack-ng]. 2019. aireplay-ng [Aircrack-ng]. [ONLINE] Available at: <a href="https://www.aircrack-ng.org/doku.php?id=aireplay-ng">https://www.aircrack-ng.org/doku.php?id=aireplay-ng</a>. [Accessed 18 February 2019].</p>
+
+<p>Aireplay-ng | Penetration Testing Tools. 2019. Aireplay-ng | Penetration Testing Tools. [ONLINE] Available at: <a href="https://tools.kali.org/wireless-attacks/aireplay-ng">https://tools.kali.org/wireless-attacks/aireplay-ng</a>. [Accessed 19 February 2019].</p>
+
+<p>Cyber Security: An Offensive Mindset 2019. 2019. Week 3 Feb 18 - An Offensive Mindset Wiki | UTS Summer Studio. [ONLINE] Available at: <a href="https://utscyber.studio/learn/Week%203%20-%20Feb%2018/">https://utscyber.studio/learn/Week%203%20-%20Feb%2018/</a>. [Accessed 18 February 2019].</p>
 
 <h3 id="subject-learning-outcomes-slos">SUBJECT LEARNING OUTCOMES(SLOs)</h3>
 
