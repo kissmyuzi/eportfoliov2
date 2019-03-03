@@ -26,7 +26,7 @@
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/publications/studio-portfolio-submission/</guid>
-      <description>STUDIO REFLECTION As a starting second year student at UTS, summer has been an exhilarating ride for me. Participating in summer studio “Cyber Security: An Offensive mindset” and Engineering Practice Preparation 1 was quite challenging, as there was tasks due every two days. This journey pushed me again and again past the comfort zone I have always dwelled, exposing a new horizon of knowledge. Of course, this wasn’t achieved overnight, but I would like to first and foremost credit the educators: Larry, Darsh, Luke and Jai.</description>
+      <description>ABOUT ME My name is Andy Lee. I’m pursuing a Bachelor of Engineering (Honours) with Diploma in Professional Engineering Practice, majoring in Software and undertaking my 2nd year at UTS. I am quite passionate about cybersecurity and aspire to be a Cyber Security Engineer with focus in incident response (Blue Team). I love problem solving and learning new skillsets, so I dedicated most of my first-year to the UTS Cyber Security Society as an opportunity to learn and gain exposure to the industry.</description>
     </item>
     
     <item>
@@ -63,8 +63,9 @@ Another area of focus would be communication, which entails the ability to commu
       <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/publications/week-4/</guid>
-      <description> SPRINT 4 REFLECTION SUBJECT LEARNING OUTCOMES(SLOs) There are 5 major subject learning outcomes with this course and the achievement of these outcomes will be outlined by this portfolio. The SLO’s are:
- Engage with Stakeholders to identify a problem (empathizing/ defining the problem) Apply Design Thinking to respond to a defined or newly identified problem Apply Technical skills to develop, model and/or evaluate design (refining/ test a prototype) Demonstrate effective collaboration and communication Conduct critical self and peer review and performance evaluation (both as an individual and a team)  </description>
+      <description>Reverse Engineering workshop (SLO 3) On Monday, Ruben, an Application Security manager came to teach us the tools of the trade in Reverse Engineering. Although I have personally touched on this subject area before,but we went straight into the deep-end through experimenting hands-on with Ruben&amp;rsquo;s Reverse Engineering challenges. The tool we used was Binary Ninja, GNU Debugger and X86 Opcode.
+^Ruben helping around the studio.
+Overall, the workshop was very challenging as we had very little training before, on the otherhand, everyone of us learnt alot especially the mindset when reversing a program.</description>
     </item>
     
     <item>
@@ -113,7 +114,7 @@ Ever since the first day of my High School engineering class, it has been my goa
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/publications/about-me/</guid>
-      <description>My name is Andy Lee. I’m pursuing a Bachelor of Engineering (Honours) with Diploma in Professional Engineering Practice, majoring in Software and undertaking my 2nd year at UTS. I am quite passionate about cybersecurity and aspire to be a Cyber Security Engineer with focus in incident response (Blue Team). I love problem solving and learning new skillsets, so I dedicated most of my first-year to the UTS Cyber Security Society as an opportunity to learn and gain exposure to the industry.</description>
+      <description>ABOUT ME My name is Andy Lee. I’m pursuing a Bachelor of Engineering (Honours) with Diploma in Professional Engineering Practice, majoring in Software and undertaking my 2nd year at UTS. I am quite passionate about cybersecurity and aspire to be a Cyber Security Engineer with focus in incident response (Blue Team). I love problem solving and learning new skillsets, so I dedicated most of my first-year to the UTS Cyber Security Society as an opportunity to learn and gain exposure to the industry.</description>
     </item>
     
     <item>
