@@ -19,6 +19,12 @@
   </url>
   
   <url>
+    <loc>/publications/last-day/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/publications/studio-portfolio-submission/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
@@ -228,7 +234,7 @@
   
   <url>
     <loc>/publications/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0.6</priority>
   </url>
   
