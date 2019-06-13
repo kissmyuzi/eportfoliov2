@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Curling: Hack the Box Walkthrough</title>
+  <meta property="og:title" content="Curling: Hack the Box Walkthrough" />
+  <meta property="og:image" content="/img/download.png" />
+  <meta name="description" content="Hello! I am a Uni student currently studying software engineering. I am interested in malware analysis/ digital forensics and has participated in Cyber Security Challenge Australia 2018 as UTS Team 4(First year).">
+  <meta property="og:description" content="Hello! I am a Uni student currently studying software engineering. I am interested in malware analysis/ digital forensics and has participated in Cyber Security Challenge Australia 2018 as UTS Team 4(First year)." />
+  <meta name="author" content="Andy Lee">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="/css/resume.css" rel="stylesheet">
+  <link href="/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.54.0" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Andy Lee</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/download.png" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#publications">Publications</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="/publications/">Publications</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="/publications/curling-walkthrough/">Curling: Hack the Box Walkthrough</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column content">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Curling: Hack the Box Walkthrough</span></h2>
+    
+    
+    
+
+<h3 id="objective">Objective</h3>
+
+<p>To gain the user flag and root flag from the respective home folder of the virtualized
+machine(Curling), utilizing enumeration and common vulnerabilities and exposures(CVE).</p>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li>Nmap - Network exploration tool and security / port scanner</li>
+<li>Dirb - Web Content Scanner</li>
+<li>NetCat - Network utility for reading and writing to network connections using the TCP and
+UPD protocol.</li>
+<li>Nano - Nano&rsquo;s ANOther editor, an enhanced free Pico clone</li>
+<li>Cyber Chef - A simple, intuitive web app for analysing and decoding data without having to
+deal with complex tools or programming languages.</li>
+</ul>
+
+<h3 id="environment">Environment</h3>
+
+<p>I used VMware Workstation Pro as my hypervisor, which sits on a NAT-network I’ve created which I use as
+a lab network. Below are the specs of the virtual machine:</p>
+
+<p><img src="../../img/curling 1.jpg" alt="Curling1" /></p>
+
+<h3 id="intelligence-gathering">Intelligence Gathering</h3>
+
+<ol>
+<li>The recon stage began with scanning the IP using Nmap, which shows two TCP ports that are
+open, 22 under the service of ssh while 80 for http.</li>
+</ol>
+
+<p><img src="../../img/curling 2 scan.jpg" alt="Curling2" /></p>
+
+<ol>
+<li>After scanning the port, I used Dirb to brute force the directories present on the machine.</li>
+</ol>
+
+<p><img src="../../img/curling 3 scan.jpg" alt="Curling3" /></p>
+
+<p>From Dirb, the most interesting thing would be the administrator page, where we can exploit later.</p>
+
+<ol>
+<li>Using the port and the IP, we can have a manual look at the content on the home page. On the
+bottom center of the page we can see the author of the post as “Floris”, which will be useful later.</li>
+</ol>
+
+<p><img src="../../img/curling 4.jpg" alt="Curling4" /></p>
+
+<ol>
+<li>I then went to have a look at the page source, revealing a suspicious file named “secret.txt” at the
+bottom of the code.</li>
+</ol>
+
+<p><img src="../../img/curling 5 source.jpg" alt="Curling5" /></p>
+
+<ol>
+<li>Finally using the information I gathered from the home page, I found a string that seems to be the
+password by adding /secret.txt after homepage: <a href="http://10.10.10.150:">http://10.10.10.150:</a></li>
+</ol>
+
+<p><img src="../../img/curling 6.jpg" alt="Curling6" /></p>
+
+<h3 id="vulnerability-scanning">Vulnerability Scanning</h3>
+
+<ul>
+<li>After going to the administration login page, I noticed that the site used Joomla as the Web
+Content Management System(CMS). Thus, for scanning I used ‘OWASP Joomla Vulnerability
+Scanner Project’ (<a href="https://github.com/rezasp/joomscan">https://github.com/rezasp/joomscan</a>). However other than the version
+number, the scanner did not reveal any exploits.</li>
+</ul>
+
+<p><img src="../../img/curling 7.jpg" alt="Curling7" /></p>
+
+<h3 id="exploitation">Exploitation</h3>
+
+<ol>
+<li>Like the challenge: “Mr. Robot CTF” I believe the initial step for this challenge would be to gain an
+administration account to then upload a reverse shell by modifying the themes. So, I began testing
+the administrator login page using the information I have gathered: “Floris, admin, admin123 and
+Super User” were potential usernames while the password was given earlier from the secret.txt.</li>
+</ol>
+
+<p>With doubt in mind, I began with the password using CyberChef. As shown below, the program
+automatically detected the formula when I pasted the input.</p>
+
+<p><img src="../../img/curling 8.jpg" alt="Curling8" /></p>
+
+<ol>
+<li>After briefly testing the usernames and password, I found that Floris was an administrator
+account. Thus, I began navigated to the templates page and choose Beeze3.</li>
+</ol>
+
+<p><img src="../../img/curling 9.jpg" alt="Curling9" /></p>
+
+<ol>
+<li>From the Beez3 menu, choose the option for a “New File” and name it whatever you want but
+choose the type as php.</li>
+</ol>
+
+<p><img src="../../img/curling 10.jpg" alt="Curling10" /></p>
+
+<ol>
+<li>Next, from pentestmonkey(<a href="http://pentestmonkey.net/tools/web-shells/php-reverse-shell">http://pentestmonkey.net/tools/web-shells/php-reverse-shell</a>),
+download the php reverse shell and copy the code onto the editor. Follow pentestmonkey’s guide to
+set up the IP + port and save the file to the template.</li>
+</ol>
+
+<p><img src="../../img/curling 11.jpg" alt="Curling11" /></p>
+
+<ol>
+<li>In a new terminal, type:</li>
+</ol>
+
+<p><em>nc -lnvp 4444</em></p>
+
+<p>The above command utilizes Netcat to listen to the port 4444. Below the screenshot shows the
+success of the reverse shell as the Netcat responded with a command line. However, make sure that
+you navigate and trigger the file first E.g. <em><a href="http://10.10.10.150/templates/beez3/lmao.php">http://10.10.10.150/templates/beez3/lmao.php</a></em> after
+setting up the listener at the terminal.</p>
+
+<p><img src="../../img/curling 12.jpg" alt="Curling12" /></p>
+
+<ol>
+<li>From this point I did a simple whoami to see my privileges.</li>
+</ol>
+
+<p><em>$ whoami</em></p>
+
+<p><em>www-data</em></p>
+
+<p>So then I used ls and cd to navigate to Floris’s personal directory through ‘home’ and then ‘floris’.
+This will show 2 files and a directory with higher privilege:</p>
+
+<p><em>$ ls</em></p>
+
+<p><em>admin-area</em></p>
+
+<p>_password<em>backup</em></p>
+
+<p><em>user.txt</em></p>
+
+<ol>
+<li>Next, we will cat the password_backup to see a bunch of hexes.</li>
+</ol>
+
+<p><img src="../../img/curling 13.jpg" alt="Curling13" /></p>
+
+<ol>
+<li>Now we will utilize CyberChef again to try and decode the hex. The simplest method is to copy
+and paste the whole thing into the input tab, while clicking multiple times on the magic wand near
+the output until the password file appears.</li>
+</ol>
+
+<p><img src="../../img/curling 14.jpg" alt="Curling14" /></p>
+
+<ol>
+<li>Now we can use this password in conjunction with the username: “floris” in a new terminal to
+login on the server using ssh with the following command.</li>
+</ol>
+
+<p><em>ssh floris@10.10.10.</em></p>
+
+<p><img src="../../img/curling 15.jpg" alt="Curling15" /></p>
+
+<ol>
+<li>Navigate to the admin-area directory and open the input to expose the url:</li>
+</ol>
+
+<p><em>url = <a href="http://127.0.0.">http://127.0.0.</a></em></p>
+
+<p>use Nano which is a tool to edit the texts and replace the URL with the path to the root.txt.</p>
+
+<p><img src="../../img/curling 16.jpg" alt="Curling16" /></p>
+
+<ol>
+<li>Finally, we have reached the root flag.</li>
+</ol>
+
+<p><img src="../../img/curling 17.jpg" alt="Curling17" /></p>
+
+<p>Below is the proof I have completed root on Hack the Box:</p>
+
+<p><img src="../../img/curling 18.jpg" alt="Curling18" /></p>
+
+<h3 id="mitigation">Mitigation</h3>
+
+<ul>
+<li>The first thing that allowed the easy access of administrator account was the hint of a
+password at the bottom of the home-page source. I would suggest removing the password
+as it would allow anyone to potentially enumerate the account.</li>
+<li>The username: “Floris” was in plain sight at the bottom of the homepage. Thus I suggest
+removing that and post through another alias other than the username of the administrator
+account.</li>
+<li>Within the server, password_backup was also unprotected, which allows anyone to possess
+the chance further privilege escalate. My suggestion is to get rid of the password_backup file
+entirely.</li>
+</ul>
+
+<h3 id="executive-report">Executive Report</h3>
+
+<p>Overall, this active machine possessed a great deal of enumeration stages set in a “real-life”
+scenario. However, by utilizing basic Kali Linux tools the machine was easy to gain the root flag.</p>
+
+<p>Below is an example of how a hacker can exploit this machine for financial benefit:</p>
+
+<p>By gaining the passwords and username, the hacker can then exploit other accounts of the same
+person. As it is very common for a person to have same account details, hackers will be able to
+obtain cash advances/ purchases using financial accounts. Otherwise, the account details could be
+sold on the dark web to other parties who will use it for other illegal purposes.</p>
+
+    <p class="mt-3">
+    <ul class="tags">
+    
+</ul>
+
+    </p>
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

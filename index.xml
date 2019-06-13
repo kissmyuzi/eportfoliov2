@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Curling: Hack the Box Walkthrough</title>
+      <link>/publications/curling-walkthrough/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/curling-walkthrough/</guid>
+      <description>Objective To gain the user flag and root flag from the respective home folder of the virtualized machine(Curling), utilizing enumeration and common vulnerabilities and exposures(CVE).
+Tools  Nmap - Network exploration tool and security / port scanner Dirb - Web Content Scanner NetCat - Network utility for reading and writing to network connections using the TCP and UPD protocol. Nano - Nano&amp;rsquo;s ANOther editor, an enhanced free Pico clone Cyber Chef - A simple, intuitive web app for analysing and decoding data without having to deal with complex tools or programming languages.</description>
+    </item>
+    
+    <item>
       <title>BSides Canberra 2019</title>
       <link>/publications/bsides-canberra-2019/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
